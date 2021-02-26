@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts Google Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-wrapper">
+        <form class="form" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST" name="registration" onsubmit="return validate()">
+            <p class="form__title">Задать вопрос</p>
+            <p><input type="text" name="name" id="username" placeholder="Фамилия Имя Отчество *"></p>
+            <p><input type="tel" name="phone" id="phone" placeholder="Телефон *" required></p>
+            <p><input type="email" name="email" placeholder="Email"></p>
+            <p><input class="form__button" type="submit" value="Отправить запрос"></p>
+        </form>
+    </div>
+    <script src="js/validate.js"></script>    
+</body>
+</html>
